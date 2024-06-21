@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>EEG Chart Form</title>
+</head>
+<body>
+<h1>Enter EEG Details</h1>
+<form action="#" th:action="@{/eeg/form}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="electrodeNumber">Electrode Number:</label>
+    <input type="number" id="electrodeNumber" name="electrodeNumber"><br><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
