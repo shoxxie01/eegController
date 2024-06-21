@@ -19,7 +19,7 @@ public class ImageController {
 
     private String getImageFromDatabase(Integer electrodeNumber) throws SQLException {
         String base64;
-        String URL = "jdbc:sqlite:C:\\Users\\User\\Desktop\\programowanie\\Java_projects\\EEGcontroller\\usereeg.db";
+        String URL = "jdbc:sqlite:C:\\Users\\User\\Desktop\\programowanie\\Java_projects\\imageServer\\usereeg.db";
         String statementSql = "SELECT image FROM user_eeg WHERE electrode_number = ?";
 
         Connection conn = DriverManager.getConnection(URL);
